@@ -1,0 +1,132 @@
+.photoBlock {
+  z-index: 0;
+  max-height: 90vh;
+  min-height: 90vh;
+  height: calc(100%);
+  background-color: #d7d7d7;
+  border-radius: 60px;
+  color: #5a5a5a;
+  grid-column: 2 / 7;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    width: 90vh;
+    align-self: center;
+    max-height: 85vh;
+    min-height: 50vh;
+    transform-origin: bottom;
+  }
+
+  .gatsby-image-wrapper{
+    filter: drop-shadow(0 0 10px #f75e74);
+  }
+}
+
+.qrcode {
+  position: absolute;
+  align-self: flex-end;
+  //height: 20vh;
+  margin-bottom: 5vh;
+  margin-right: 5vw;
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+  max-width: 60vw;
+  height: calc(100px + 2rem);
+
+  .QRCodeSVG {
+    border-radius: 0 1rem 1rem 1rem;
+    background-color: rgba($color: #ffffff, $alpha: 0.5);
+    backdrop-filter: blur(5px);
+    padding: 1rem;
+  }
+  .button {
+    background-color: rgba($color: #ffffff, $alpha: 0.5);
+    backdrop-filter: blur(5px);
+    padding: 1rem;
+    aspect-ratio: 1/2;
+    height: calc(50% - 2rem);
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem 0 0 1rem;
+
+    .copy {
+      aspect-ratio: 1/1;
+      height: 70%;
+      width: auto;
+    }
+  }
+}
+
+.qrcode::before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  //opacity: 0.01;
+  height: 25px;
+  width: 25px;
+  top: 50%;
+  left: 2rem;
+  border-radius: 0px 1rem 0px 0px;
+  box-shadow: (6px -6px 6px rgb(255, 255, 255));
+  backdrop-filter: blur(5px);
+}
+
+@mixin text-format {
+  position: absolute;
+  font-size: clamp(5rem, 80%, 6rem);
+  max-width: 85%;
+  word-spacing: 10vw;
+  text-align: center;
+  margin: 0;
+  top: 40px;
+}
+
+h1 {
+  @include text-format();
+}
+
+@media (width < 600px) {
+  h1 {
+    position: absolute;
+    font-size: 30px;
+    top: 80px;
+  }
+
+  .photoBlock {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 0;
+    display: flex;
+    align-items: center;
+
+    img {
+      align-self: center;
+      width: auto;
+    }
+  }
+
+  .qrcode {
+    bottom: 0.5vh;
+    right: 5%;
+    max-width: 60%;
+
+    .QRCodeSVG {
+      aspect-ratio: 1/1;
+      height: auto;
+      min-width: 70px;
+    }
+    height: auto;
+  }
+}

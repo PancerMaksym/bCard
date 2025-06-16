@@ -26,8 +26,17 @@
     transform-origin: bottom;
   }
 
-  .gatsby-image-wrapper{
-    filter: drop-shadow(0 0 10px #f75e74);
+  .gatsby-image-wrapper::after{
+    content: "";
+    position: absolute;
+    top: calc(30%);
+    left: calc(13%);
+    height: 40%;
+    width: 70%;
+    background-color: #ff7846;
+    border-radius: 50%;
+    filter: blur(25px);
+    z-index: -1;
   }
 }
 

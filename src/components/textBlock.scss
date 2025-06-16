@@ -64,7 +64,7 @@
         position: relative;
         top: 12px;
         left: 12px;
-        background-color: #f75e74;
+        background-color: #ff7846;
         height: calc(100% / 6 * 4 - 24px);
         width: calc(100% - 24px);
         border-radius: 42px;
@@ -114,7 +114,7 @@
         position: relative;
         top: calc(25% - 12px);
         left: 12px;
-        background-color: #f75e74;
+        background-color: #ff7846;
         height: calc(75% - 24px);
         width: calc(100% - 24px);
         border-radius: 42px;
@@ -187,6 +187,7 @@
     .textBlock{
         grid-column: 1 / 2;
         grid-row: 2 / 3; 
+        z-index: 0;
         
         .text{
             height: 100%;

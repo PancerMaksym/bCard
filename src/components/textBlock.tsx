@@ -63,12 +63,22 @@ const TextBlock = () => {
               <TbBrandTelegram />
             </Link>
 
-            <div onClick={handleClick} style={{ cursor: "pointer" }}>
+            <Link
+              to="https://www.fiverr.com/s/xXVKwzQ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <TbBrandFiverr />
-            </div>
-            <div onClick={handleClick} style={{ cursor: "pointer" }}>
+            </Link>
+
+            <Link 
+              to="https://www.upwork.com/freelancers/~019f7727debb346c81?mp_source=share"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <TbBrandUpwork />
-            </div>
+            </Link>
+
             <Link
               to="https://github.com/PancerMaksym"
               target="_blank"
@@ -79,7 +89,11 @@ const TextBlock = () => {
           </div>
         </div>
         <div className="portfolio">
-          <div onClick={handleClick} style={{ cursor: "pointer" }} className="portfolio_box">
+          <div
+            onClick={handleClick}
+            style={{ cursor: "pointer" }}
+            className="portfolio_box"
+          >
             <StaticImage
               alt={""}
               src="../images/remove.png"

@@ -39,7 +39,7 @@ const TextBlock = () => {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme="light"
+        theme="dark"
         transition={Bounce}
       />
       <div className="text">
@@ -51,6 +51,7 @@ const TextBlock = () => {
               to="mailto:pantsyr.maksym@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
+              title="Gmail"
             >
               <TbBrandGmail />
             </Link>
@@ -59,22 +60,20 @@ const TextBlock = () => {
               to="https://t.me/pancerjeager"
               target="_blank"
               rel="noopener noreferrer"
+              title="Telegram"
             >
               <TbBrandTelegram />
             </Link>
 
-            <Link
-              to="https://www.fiverr.com/s/xXVKwzQ"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <div onClick={() => handleClick()} style={{ cursor: "pointer" }}>
               <TbBrandFiverr />
-            </Link>
+            </div>
 
-            <Link 
+            <Link
               to="https://www.upwork.com/freelancers/~019f7727debb346c81?mp_source=share"
               target="_blank"
               rel="noopener noreferrer"
+              title="UpWork"
             >
               <TbBrandUpwork />
             </Link>
@@ -83,6 +82,7 @@ const TextBlock = () => {
               to="https://github.com/PancerMaksym"
               target="_blank"
               rel="noopener noreferrer"
+              title="GitHub"
             >
               <TbBrandGithub />
             </Link>
@@ -95,7 +95,8 @@ const TextBlock = () => {
             className="portfolio_box"
           >
             <StaticImage
-              alt={""}
+              alt={"Portfolio Photo"}
+              title="Portfolio Photo"
               src="../images/remove.png"
               className="prof_photo"
             />

@@ -66,12 +66,13 @@ function PhotoBlock() {
         transition={Bounce}
       />
       <h1 className="name">Pantsyr Maksym</h1>
-      <StaticImage alt={""} src="../images/remove.png" className="photo" />
+      <StaticImage alt={"Profile Photo"} title="Profile Photo" src="../images/remove.png" className="photo" />
       <div className="qrcode">
         <div className="button">
-          <MdContentCopy className="copy" style={{ cursor: "pointer" }} onClick={handleCopy} />
+          <MdContentCopy title="Copy" className="copy" style={{ cursor: "pointer" }} onClick={handleCopy} />
         </div>
         <QRCodeSVG
+          title="QRCode"
           className="QRCodeSVG"
           value="https://b-card-mu.vercel.app/"
           height={100}

@@ -11,6 +11,6 @@ const IndexPage = () => (
   </div>
 )
 
-export const Head = () => <Seo title="Bisnes Card" />
+export const Head = () => <Seo title="Pantsyr Maksym | Business Card" />
 
 export default IndexPage

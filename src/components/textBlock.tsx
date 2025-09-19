@@ -89,9 +89,8 @@ const TextBlock = () => {
           </div>
         </div>
         <div className="portfolio">
-          <div
-            onClick={handleClick}
-            style={{ cursor: "pointer" }}
+          <Link
+            to="https://portfolio-five-eta-46.vercel.app/"
             className="portfolio_box"
           >
             <StaticImage
@@ -101,11 +100,11 @@ const TextBlock = () => {
               className="prof_photo"
             />
             <h3>Portfolio</h3>
-          </div>
+          </Link>
         </div>
         <div className="date">
           <h3>Project</h3>
-          <h2>2</h2>
+          <h2>5</h2>
         </div>
       </div>
     </div>

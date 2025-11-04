@@ -65,9 +65,13 @@ const TextBlock = () => {
               <TbBrandTelegram />
             </Link>
 
-            <div onClick={() => handleClick()} style={{ cursor: "pointer" }}>
+            <Link
+              to="https://www.fiverr.com/maksympantsyr"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Fiver">
               <TbBrandFiverr />
-            </div>
+            </Link>
 
             <Link
               to="https://www.upwork.com/freelancers/~019f7727debb346c81?mp_source=share"

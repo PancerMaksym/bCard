@@ -94,7 +94,7 @@ const TextBlock = () => {
         </div>
         <div className="portfolio">
           <Link
-            to="https://portfolio-five-eta-46.vercel.app/"
+            to="https://my-own-portfolio-alpha.vercel.app/"
             className="portfolio_box"
           >
             <StaticImage
